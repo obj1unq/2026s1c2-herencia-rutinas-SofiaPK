@@ -1,6 +1,9 @@
 // Apunte CLASES https://docs.google.com/document/d/1yjNMBBlgqv_F_Fs1X7lBS54r-bexeD933dKOvh4oiRA/edit?tab=t.0#heading=h.8u2q0xt88h8h
 // Apunte HERENCIA https://docs.google.com/document/d/1eCyXD-t7pnW_kDAUQLSD4Tu0nDsDOON4HsmBdk1vVvo/edit?tab=t.0#heading=h.n89qeecqm48s
 
+import personas.*
+import clubes.*
+
 class Rutina {
     method cantCaloriasQueQuema(tiempoDePractica) {
         //100 * (tiempo - descanso) * intensidad
