@@ -34,11 +34,15 @@ class Persona {
 
 class PersonaSedentaria inherits Persona {
     // El tiempo que ejercita una rutina se establece para cada persona sedentaria
-    var property tiempoDePractica
+    const tiempoDePractica
 
     // La cantidad de kilosPorCaloría de las personas sedentarias es 7000
     override method kilosPorCaloriasQueQuema() {
         return 7000
+    }
+
+    override method tiempoDePractica() {
+        return tiempoDePractica
     }
 
     // solo aplican una rutina si su peso es mayor a 50

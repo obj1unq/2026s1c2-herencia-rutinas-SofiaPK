@@ -18,17 +18,17 @@ class Rutina {
 
 class Running inherits Rutina {
     // La intensidad se establece para cada rutina en especial
-    var property intensidad
+    //var property intensidad
+    const intensidad
 
     // El descanso es de 5 minutos si el tiempo es mayor a 20, si no 2
     override method descanso(tiempoDePractica) {
         return if (tiempoDePractica > 20) 5 else 2
     }
 
-    // correr en la playa
-    //override method intensidad() {
-    //  return 1.2
-    //}
+    override method intensidad() {
+        return intensidad // <-- magic number
+    }
 }
 
 class Maraton inherits Running {
@@ -36,11 +36,6 @@ class Maraton inherits Running {
     override method cantCaloriasQueQuema(tiempoDePractica) {
         return super(tiempoDePractica) * 2 // repasar tema super()
     }
-
-    // maraton b.a
-    //override method intensidad() {
-    //  return 1.5
-    //}
 }
 
 class Remo inherits Rutina{
